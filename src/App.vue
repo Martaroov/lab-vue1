@@ -1,12 +1,25 @@
 <template>
+
   <nav>
     <h2>¡Hola Mundo :)!</h2>
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link> |
     <router-link to="/contact">Contact</router-link>
   </nav>
+<!-- parte del ejercicio 2 -->
   <router-view/>
+  <Navbar/>
+  <Footer/>
 </template>
+
+<script>
+import Navbar from './components/Navbar.vue';
+import Footer from './components/Footer.vue';
+export default {
+    components: { Navbar, Footer }
+}
+</script>
+
 
 <style>
 #app {
